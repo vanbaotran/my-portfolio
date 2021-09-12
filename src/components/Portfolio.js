@@ -4,8 +4,9 @@ export const myProjects = [
         id: "3a",
         name: "NINJA MISSION",
         year: 2021,
-        technologies: "HTML5, CSS3, JS, NodeJS, MongoDB, Express, React, API Rest, external API",
+        technologies: "HTML5, CSS3, JS, NodeJS, MongoDB, Express, Socket.io, React, API Rest, external API",
         description: "A job hunting website that feels like a dating app.",
+        text: "Looking for a job is never something we are so excited about. My website is to make applying for a job a fun experience with a job search app that feels more like a dating app instead of the traditional serious looking job boards out there. I had so much fun build this project with my teammate. React is definitely my new bestfriend. We also had the chance to use Socket.io to create chat room for candidat and recruiter.",
         link:"https://ninjamission.herokuapp.com/",
         imageUrl:[
             "https://res.cloudinary.com/vanbaotran/image/upload/v1631466622/Screen_Shot_2021-09-12_at_6.54.02_PM_qaj034.png",
@@ -23,6 +24,7 @@ export const myProjects = [
         year: 2021,
         technologies: "Mongo DB, ExpressJS, NodeJS, JavaScript, HTML, CSS",
         description: "An E-commerce website for my vintage business.",
+          text: "I started Slay & Stay Vintage because I really enjoy vintage clothing. It’s so much fun to find unique pieces and to style them with other items to create different outfits.  At first I just bought vintage clothing for myself, but I’ve discovered it’s also a lot of fun to help other people finding their own unique style!",
         link:"https://slayandstay.herokuapp.com/",
         imageUrl:[
             'https://res.cloudinary.com/vanbaotran/image/upload/v1631471821/Screen_Shot_2021-09-12_at_8.34.19_PM_ajyqyg.png',
@@ -40,7 +42,8 @@ export const myProjects = [
         year: 2021,
         technologies: "HTML5, CSS3, Canvas, Figma, JS, DOM",
         description: " A cooking game with limited time.",
-        link:"https://vanbaotran.github.io/SushiBar/",
+        text:'I love Overcooked on Twitch, it was the inspiration for my very first project at Ironhack. I had so much fun building this project because I love food and it also helped me practice everything I have learned on Javascript.',
+        link: "https://vanbaotran.github.io/SushiBar/",
         imageUrl:["https://res.cloudinary.com/vanbaotran/image/upload/v1631465327/Screen_Shot_2021-09-12_at_6.47.34_PM_vwpujr.png"]
     }
   ]
@@ -58,6 +61,7 @@ class Portfolio extends React.Component {
 
     }
     render(){
+    
     return (
         <div className='portfolio'>
             {/* <h2>PORTFOLIO</h2> */}
@@ -82,8 +86,14 @@ class Portfolio extends React.Component {
             })}
             </div>
             <div className='details'>
-            <h4>{this.state.currentProject.description}</h4>
-            <h4>Technologies: {this.state.currentProject.technologies}</h4>
+            <p>{this.state.currentProject.description}</p>
+            <p>{this.state.currentProject.text}</p>
+            <p>Technologies: {this.state.currentProject.technologies}</p>
+            <a href={this.state.currentProject.link}>Check the website out here → {this.state.currentProject.link}</a>
+            <div className='last-line'>
+                {this.state.currentProject.link && <p>Scan this QR Code to experience the app on Mobile</p>}
+                <img src={this.state.currentProject.qrCodeUrl} alt=''/>
+            </div>
             </div>
             </main>
             </section>
