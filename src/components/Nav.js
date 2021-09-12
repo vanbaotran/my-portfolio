@@ -1,7 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-const Nav = () => {
+class Nav extends React.Component {
+    render(){
     return (
         <div className='navBar'>
         <ul>
@@ -13,5 +14,7 @@ const Nav = () => {
         </ul>
         </div>
     )
+
+    }
 }
 export default Nav;

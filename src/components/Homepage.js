@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Portfolio from './Portfolio'
 
 const Homepage = () => {
     return (
@@ -6,14 +7,17 @@ const Homepage = () => {
         <div className='header'>
             <div className='text'>
             <p>Hello, I'm</p>
-            <h1>Bao-Tran Van</h1>
+            <h2>Bao-Tran Van</h2>
             <p>and I am a Web Developer</p>
             </div>
         </div>
         <div className='feature'>
-        <span>Featured</span><span className='text-bold'> Portfolio</span>
-
+        <div className='text-span'>
+        <span>Featured</span>
+        <span className='text-bold'> Portfolio</span>
         </div>
+        </div>
+        <Portfolio />
         </main>
     )
 }

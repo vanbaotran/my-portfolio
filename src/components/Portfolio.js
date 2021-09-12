@@ -57,9 +57,6 @@ class Portfolio extends React.Component {
             currentProject: theProject
         })
     }
-    componentDidUpdate(){
-
-    }
     render(){
     
     return (
@@ -75,8 +72,9 @@ class Portfolio extends React.Component {
                 </div>
             })}
             </div>
+            <p>Click on each project to see details below ↓</p>
             </section>
-
+           
             <section>
             <h1 className='project-title'>{this.state.currentProject.name}</h1>
             <main className='project-details'>
@@ -91,12 +89,13 @@ class Portfolio extends React.Component {
             <p>Technologies: {this.state.currentProject.technologies}</p>
             <a href={this.state.currentProject.link}>Check the website out here → {this.state.currentProject.link}</a>
             <div className='last-line'>
-                {this.state.currentProject.link && <p>Scan this QR Code to experience the app on Mobile</p>}
+                {this.state.currentProject.link && <p>Scan this QR Code for Mobile experience</p>}
                 <img src={this.state.currentProject.qrCodeUrl} alt=''/>
             </div>
             </div>
             </main>
             </section>
+            
 
         </div>
     )
