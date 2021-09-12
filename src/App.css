@@ -1,38 +1,68 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: #FEFAE0;
+}
+.homepage .header {
+  font-size: 1.5rem;
+  color: white;
+  height: 80vh;
+  background-image: url('https://res.cloudinary.com/vanbaotran/image/upload/v1631464401/newlandpage_ixw6qm.png');
+  background-size: cover;
+}
+.text {
+  margin: auto;
+  position:absolute;
+  left: 30px;
+  bottom: 150px;
+
+}
+.feature {
+  color: #283618;
+  font-size: 2rem;
+  margin: 30px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-bold {
+  font-weight: 900;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.photo {
+  max-width: 100%;
+  height: auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navBar {
+  text-align: center;
+}
+.navBar a{
+  margin: 50px;
+  color: #283618;
+  list-style: none;
+  text-decoration: none;
+}
+.resume { 
+  font-size: 1.2rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 30px;
 }
-
-.App-link {
-  color: #61dafb;
+.education, .experience {
+  text-align: left;
+  width: 50vw;
+  background-color:#606C38;
+  color:#FEFAE0;
+  padding-left: 20px;
+  padding-right: 40px;
+  padding-top:50px;
+  padding-bottom: 100px;
+  border-right: 1px solid #FEFAE0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.education h2, .experience h2 {
+  text-align: center;
+}
+.line {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.education .school , .experience-content {
+  margin-left: 20px;
 }
