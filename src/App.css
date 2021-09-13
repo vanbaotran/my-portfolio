@@ -192,3 +192,57 @@ button {
   padding:10px 40px;
   font-family: 'Oswald', sans-serif;
 }
+.about h2 {
+  background-color: #606C38;
+  color: #FEFAE0; 
+  margin:0;
+  padding:30px;
+  text-align: center;
+  font-size: 2rem;
+}
+.about .box {
+  background-color: #606C38;
+  color: #FEFAE0;
+  display: flex;
+  flex-wrap: wrap;
+  margin:0 auto;
+  max-width: 100%;
+  padding: 30px;
+  justify-content: center;
+}
+.number {
+  font-size: 5rem;
+}
+.content {
+  width: 20vw;
+  margin:10px;
+}
+.fact {
+  display: flex;
+  align-items: center;
+  padding:30px;
+}
+.skills {
+  position:relative;
+  z-index:-5;
+}
+.skills img {
+  max-width: 100%;
+}
+.skills ul li {
+  list-style: none;
+}
+.skills .hard {
+  position:absolute;
+  top:50%;
+  left:10%;
+  transform: translate(-50% -50%);
+  color:#FEFAE0;
+}
+.skills .soft {
+  position:absolute;
+  top:50%;
+  right:10%;
+  transform: translate(-50% -50%);
+  color:#283618;
+}
