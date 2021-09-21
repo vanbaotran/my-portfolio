@@ -2,7 +2,7 @@
 body {
   font-family: 'Oswald', sans-serif;
   background-color: #FEFAE0;
-  max-width: 76vw;
+  max-width: 80%;
   display: block;
   margin:0 auto;
 }
@@ -23,8 +23,10 @@ a {
 .homepage .header img {
   z-index:-5;
   position: absolute;
-  top:0;
-  left: 0;
+  top:50px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 80%;
 }
 .text p {
   margin-block-start: 0;
