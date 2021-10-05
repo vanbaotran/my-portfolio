@@ -1,8 +1,8 @@
 import React from 'react'
-const skills = {
-    soft:["Meeting short deadlines","Teamwork","Communication","Autonomy","Work well under pressure", "Strong problem solver","Self-directed","Public speaking"],
-    hard:["HTML5","CSS","Javascript","ReactJS","NodeJS","Express","NextJS","MongoDB","Axios","Socket.io"]
-}
+// const skills = {
+//     soft:["Meeting short deadlines","Teamwork","Communication","Autonomy","Work well under pressure", "Strong problem solver","Self-directed","Public speaking"],
+//     hard:["HTML5","CSS","Javascript","ReactJS","NodeJS","Express","NextJS","MongoDB","Axios","Socket.io"]
+// }
 const facts = [
     {
         number:"8",
@@ -41,9 +41,9 @@ const facts = [
                 </div>
             })}
             </div>
-            <div className='skills'>
-            <img src='/images/skills.png' alt=''/>
-            <ul className='hard'>
+            {/* <div className='skills'>
+            {/* <img src='/images/skills.png' alt=''/> */}
+            {/* <ul className='hard'>
                 {skills.hard.map((el,id)=>{
                     return <li>{el}</li>
                 })}
@@ -52,8 +52,8 @@ const facts = [
                {skills.soft.map((el,id)=>{
                     return <li>{el}</li>
                 })}
-            </ul>
-            </div>
+            </ul> */}
+            {/* </div>  */}
         </section>
     )
 }
