@@ -24,23 +24,16 @@ a {
   padding: 5vw;
   position:relative;
 }
-.homepage .header img {
-  max-width: 100%;
-  z-index:-5;
-  position: absolute;
-  left: 50%;
-  top:0;
-  transform: translateX(-50%);
-}
 .text p {
   margin-block-start: 0;
   margin-block-end: 0;
 }
 .text {
+  color:white;
   margin: auto;
   position:absolute;
   left: 20%;
-  top: 40%;
+  top: 50%;
 }
 .text h2 {
   margin-block-start: 0;
@@ -248,7 +241,6 @@ button {
   bottom: 2%;
   color: white;
   font-size: 2.5rem;
-  padding: 10px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
