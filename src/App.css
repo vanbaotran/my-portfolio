@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 body {
   font-family: 'Oswald', sans-serif;
-  background-color: #FEFAE0;
   max-width: 70%;
   display: block;
   margin:0 auto;
@@ -15,29 +14,26 @@ a {
 
 }
 .homepage .header {
+  background-image: url("https://res.cloudinary.com/vanbaotran/image/upload/v1631464401/newlandpage_ixw6qm.png") ;
+  background-size: cover;
+  background-repeat: no-repeat;
   max-width:100%;
   font-size: 1.5rem;
   color: white;
-  height: 500px;
+  height: 70vh;
   padding: 5vw;
   position:relative;
-}
-.homepage .header img {
-  z-index:-5;
-  position: absolute;
-  left: 50%;
-  top:0;
-  transform: translateX(-50%);
 }
 .text p {
   margin-block-start: 0;
   margin-block-end: 0;
 }
 .text {
+  color:white;
   margin: auto;
   position:absolute;
   left: 20%;
-  top: 40%;
+  top: 50%;
 }
 .text h2 {
   margin-block-start: 0;
@@ -85,7 +81,7 @@ a {
   text-align: left;
   width: 50vw;
   background-color:#606C38;
-  color:#FEFAE0;
+  color:white;
   padding-left: 20px;
   padding-right: 40px;
   padding-top:50px;
@@ -121,7 +117,7 @@ a {
 }
 .project-list h3 {
   text-decoration: none;
-  color: #FEFAE0;
+  color: white;
 }
 .project-title {
   margin-top: 30px;
@@ -166,12 +162,14 @@ a {
 .contact-info {
   color:#283618;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-start;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
+  max-width: 90vw;
 }
 .contact-info .avatar {
   width: 300px;
+  margin-right: 5%;
 }
 .contact-info .avatar img {
   max-width: 100%;
@@ -202,15 +200,15 @@ button {
   margin-top: 50px;
   margin-left: 0;
   background-color: #606C38;
-  color:#FEFAE0;
+  color:white;
   border-radius: 16px;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   padding:10px 40px;
   font-family: 'Oswald', sans-serif;
 }
 .about h2 {
   background-color: #606C38;
-  color: #FEFAE0; 
+  color: white; 
   margin:0;
   padding:30px;
   text-align: center;
@@ -218,7 +216,7 @@ button {
 }
 .about .box {
   background-color: #606C38;
-  color: #FEFAE0;
+  color: white;
   display: flex;
   flex-wrap: wrap;
   margin:0 auto;
@@ -239,13 +237,14 @@ button {
   padding:30px;
 }
 .skills {
-  border-bottom: 1px solid #606C38;
-  padding: 0;
-  margin: 0 auto 20px auto;
+  position:absolute;
+  bottom: 2%;
+  color: white;
+  font-size: 2.5rem;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  
 }
 .skills li {
   font-size: 0.5em;
@@ -332,5 +331,8 @@ button {
   .content {
     padding: 2px;
     width: 100px;
+  }
+  .skills {
+    font-size: 1.2rem;
   }
 }

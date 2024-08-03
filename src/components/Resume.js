@@ -12,7 +12,7 @@ const Resume = () => {
         content:[
             "• 24-week web development bootcamp.",
             "• Build collaboratif projects with Github. (50 repos)",
-            "• Built back-end projects using asynchrone programming in JS, NodeJS, MongoDB, Express, HandlebarsJS, Axios.",
+            "• Build back-end projects using asynchrone programming in JS, NodeJS, MongoDB, Express, HandlebarsJS, Axios.",
             "• Build front-end projects using HTML, CSS, Javascript.",
             "• Build a simple page application using React: Creation API Rest, Architecture MVVM with React, Using external API."
             ]
@@ -53,43 +53,44 @@ const Resume = () => {
   ]
  const myExperience = [
       {
-      name:"LAGARDERE TRAVEL RETAIL",
+      name:"KOALA - GOLAO",
       city: "Paris",
       country:"France",
-      jobTitle:"Collections Manager",
+      jobTitle:"Back-End Developer",
       jobDescription:[
-        "• Built OTB, buying budgets by country, by brands in partnership with others 7 countries.",
-        "• Elaborated sales listing, making sales report and follow-ups for all countries, achieved 90% Sell-Through of old collections.",
-        "• Established weekly sales report (turnovers, sell-through), and daily co-ordinated with teams and countries in my perimeter."
+        "• Design and develop new features for our API dedicated to our partners to provide them with travel insurance services using NestJS, TypeScript, and PostgreSQL, in collaboration with the product team.",
+        "• Maintain Clean Code principles within a complex back-end infrastructure organized in a monorepo on AWS (EC2, EventBridge, Lambda, QuickSight).",
+        "• Create dashboards on QuickSight using datasets created by Athena for fraud management and to monitor product performance (BI).",
+          "• Create endpoints for a claim funnel dedicated to the partners' clients that allows them to view their booking information and the status of their claims."
       ],
-      jobStarted:"2019",
-      jobEnded:""
+      jobStarted:"Sep 2023",
+      jobEnded:"Aug 2024"
     },
     {
-      name:"KENZO - LVMH",
+      name:"KOOALYS - ADMIRAL GROUP",
       city: "Paris",
       country:"France",
       jobTitle:"Retail Merchandiser",
       jobDescription:[
-        "• Addressed product assortment for retail stores in France and advised buying quantities.",
-        "• Managed product assortment for 5 Kenzo stores in America, led weekly meeting with the team.",
-        "• Demonstrated follow-up on the marchandise delivery.",
-        "• Authored and publicized weekly sales report."
+        "• Develop an API for a fleet insurance platform serving SMEs and micro-enterprises using TypeScript, NodeJS, and built with event sourcing and microservices.",
+        "• Infrastructure: AWS CDK and Serverless Framework. CI/CD based on GitHub Actions, integrated with Nx to deploy only the relevant services. AWS S3, DynamoDB, and Step Functions are used for our scale-to-zero cost stack. We used Algolia as the search engine, React, and TailwindCSS for the front end."
       ],
-      jobStarted:"2017",
-      jobEnded:"2019"
+      jobStarted:"Nov 2021",
+      jobEnded:"Aug 2023"
     },
-    {
-      name:"SUNGLASS HUT FRANCE - LUXOTTICA",
-      city: "Paris",
-      country:"France",
-      jobTitle:"Procurement assistant",
-      jobDescription:["• Moderated orders to meet urgent needs with SAP for 63 stores in France.",
-      "• Prepared, maintained and reviewed purchasing files, reports and price lists.",
-      "• Resolved shortages, missed or late deliveries, by scheduling, expediting deliveries and other problems, report directly to Luxottica."],
-      jobStarted:"Jun",
-      jobEnded:"Sept 2017"
-    },
+     {
+         name:"LAGARDERE TRAVEL RETAIL",
+         city: "Paris",
+         country:"France",
+         jobTitle:"Collections Manager",
+         jobDescription:[
+             "• Built OTB, buying budgets by country, by brands in partnership with others 7 countries.",
+             "• Elaborated sales listing, making sales report and follow-ups for all countries, achieved 90% Sell-Through of old collections.",
+             "• Established weekly sales report (turnovers, sell-through), and daily co-ordinated with teams and countries in my perimeter."
+         ],
+         jobStarted:"Nov 2019",
+         jobEnded:"Oct 2021"
+     },
 
  ]
  const checkJobEnded = (end) => {
